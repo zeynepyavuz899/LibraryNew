@@ -92,6 +92,7 @@
             this.lblDosyaName.TabIndex = 15;
             this.lblDosyaName.TabStop = true;
             this.lblDosyaName.Text = "  Dosya.jpg";
+            this.lblDosyaName.Visible = false;
             // 
             // btnPicture
             // 
@@ -255,13 +256,12 @@
             this.btnAdd.IconColor = System.Drawing.Color.Black;
             this.btnAdd.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnAdd.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAdd.Location = new System.Drawing.Point(1012, 460);
+            this.btnAdd.Location = new System.Drawing.Point(984, 614);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(148, 48);
+            this.btnAdd.Size = new System.Drawing.Size(223, 48);
             this.btnAdd.TabIndex = 2;
             this.btnAdd.Text = "Add";
-            this.btnAdd.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAdd.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnAdd.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
@@ -271,9 +271,9 @@
             // 
             // pictureBoxPic
             // 
-            this.pictureBoxPic.Location = new System.Drawing.Point(1012, 273);
+            this.pictureBoxPic.Location = new System.Drawing.Point(984, 264);
             this.pictureBoxPic.Name = "pictureBoxPic";
-            this.pictureBoxPic.Size = new System.Drawing.Size(148, 165);
+            this.pictureBoxPic.Size = new System.Drawing.Size(223, 283);
             this.pictureBoxPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxPic.TabIndex = 11;
             this.pictureBoxPic.TabStop = false;

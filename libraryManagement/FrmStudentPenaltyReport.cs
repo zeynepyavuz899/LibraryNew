@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace libraryManagement
 {
-    public partial class FrmPenalty : Form
+    public partial class FrmStudentPenaltyReport : Form
     {
-        public FrmPenalty()
+        public FrmStudentPenaltyReport()
         {
             InitializeComponent();
-        }
-        DateTime thisDay = DateTime.Today.AddDays(5);
-        private void FrmPenalty_Load(object sender, EventArgs e)
-        {
-            label1.Text = thisDay.ToString();
         }
     }
 }

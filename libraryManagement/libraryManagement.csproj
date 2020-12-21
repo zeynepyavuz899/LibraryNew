@@ -55,6 +55,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmAddBook.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -121,6 +127,30 @@
     <Compile Include="FrmReturnBook.Designer.cs">
       <DependentUpon>FrmReturnBook.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmStudentAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmStudentAccount.Designer.cs">
+      <DependentUpon>FrmStudentAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmStudentBookReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmStudentBookReport.Designer.cs">
+      <DependentUpon>FrmStudentBookReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmStudentEditAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmStudentEditAccount.Designer.cs">
+      <DependentUpon>FrmStudentEditAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmStudentPenaltyReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmStudentPenaltyReport.Designer.cs">
+      <DependentUpon>FrmStudentPenaltyReport.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmStudentReport.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -133,6 +163,9 @@
     <Compile Include="sqlbaglantisi.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmAddBook.resx">
       <DependentUpon>FrmAddBook.cs</DependentUpon>
@@ -166,6 +199,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmReturnBook.resx">
       <DependentUpon>FrmReturnBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmStudentAccount.resx">
+      <DependentUpon>FrmStudentAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmStudentBookReport.resx">
+      <DependentUpon>FrmStudentBookReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmStudentEditAccount.resx">
+      <DependentUpon>FrmStudentEditAccount.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmStudentReport.resx">
       <DependentUpon>FrmStudentReport.cs</DependentUpon>

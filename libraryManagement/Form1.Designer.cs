@@ -32,6 +32,11 @@
             this.panelLogo = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.panelTop = new System.Windows.Forms.Panel();
+            this.LblHome = new System.Windows.Forms.Label();
+            this.panelShadow = new System.Windows.Forms.Panel();
+            this.panelDesktopForm = new System.Windows.Forms.Panel();
+            this.ıconPictureBoxCurrent = new FontAwesome.Sharp.IconPictureBox();
             this.btnHome = new System.Windows.Forms.PictureBox();
             this.ıconButtonAddPublication = new FontAwesome.Sharp.IconButton();
             this.ıconButtonAddBook = new FontAwesome.Sharp.IconButton();
@@ -44,16 +49,11 @@
             this.ıconButtonReturnBook = new FontAwesome.Sharp.IconButton();
             this.ıconButtonPenalty = new FontAwesome.Sharp.IconButton();
             this.ıconButtonLogOut = new FontAwesome.Sharp.IconButton();
-            this.panelTop = new System.Windows.Forms.Panel();
-            this.LblHome = new System.Windows.Forms.Label();
-            this.ıconPictureBoxCurrent = new FontAwesome.Sharp.IconPictureBox();
-            this.panelShadow = new System.Windows.Forms.Panel();
-            this.panelDesktopForm = new System.Windows.Forms.Panel();
             this.panelMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnHome)).BeginInit();
             this.panelTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ıconPictureBoxCurrent)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnHome)).BeginInit();
             this.SuspendLayout();
             // 
             // panelMenu
@@ -110,6 +110,62 @@
             this.label1.Size = new System.Drawing.Size(95, 41);
             this.label1.TabIndex = 1;
             this.label1.Text = "Kelco";
+            // 
+            // panelTop
+            // 
+            this.panelTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.panelTop.Controls.Add(this.LblHome);
+            this.panelTop.Controls.Add(this.ıconPictureBoxCurrent);
+            this.panelTop.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelTop.Location = new System.Drawing.Point(350, 0);
+            this.panelTop.Name = "panelTop";
+            this.panelTop.Size = new System.Drawing.Size(1221, 75);
+            this.panelTop.TabIndex = 1;
+            // 
+            // LblHome
+            // 
+            this.LblHome.AutoSize = true;
+            this.LblHome.Font = new System.Drawing.Font("Papyrus", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblHome.ForeColor = System.Drawing.Color.Gainsboro;
+            this.LblHome.Location = new System.Drawing.Point(70, 24);
+            this.LblHome.Name = "LblHome";
+            this.LblHome.Size = new System.Drawing.Size(74, 33);
+            this.LblHome.TabIndex = 1;
+            this.LblHome.Text = "Home";
+            // 
+            // panelShadow
+            // 
+            this.panelShadow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(24)))), ((int)(((byte)(58)))));
+            this.panelShadow.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelShadow.Location = new System.Drawing.Point(350, 75);
+            this.panelShadow.Name = "panelShadow";
+            this.panelShadow.Size = new System.Drawing.Size(1221, 14);
+            this.panelShadow.TabIndex = 2;
+            // 
+            // panelDesktopForm
+            // 
+            this.panelDesktopForm.AutoScroll = true;
+            this.panelDesktopForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.panelDesktopForm.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelDesktopForm.Location = new System.Drawing.Point(350, 89);
+            this.panelDesktopForm.Name = "panelDesktopForm";
+            this.panelDesktopForm.Size = new System.Drawing.Size(1221, 935);
+            this.panelDesktopForm.TabIndex = 3;
+            // 
+            // ıconPictureBoxCurrent
+            // 
+            this.ıconPictureBoxCurrent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.ıconPictureBoxCurrent.ForeColor = System.Drawing.Color.Gainsboro;
+            this.ıconPictureBoxCurrent.IconChar = FontAwesome.Sharp.IconChar.Home;
+            this.ıconPictureBoxCurrent.IconColor = System.Drawing.Color.Gainsboro;
+            this.ıconPictureBoxCurrent.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.ıconPictureBoxCurrent.IconSize = 63;
+            this.ıconPictureBoxCurrent.Location = new System.Drawing.Point(8, 11);
+            this.ıconPictureBoxCurrent.Name = "ıconPictureBoxCurrent";
+            this.ıconPictureBoxCurrent.Size = new System.Drawing.Size(65, 63);
+            this.ıconPictureBoxCurrent.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ıconPictureBoxCurrent.TabIndex = 0;
+            this.ıconPictureBoxCurrent.TabStop = false;
             // 
             // btnHome
             // 
@@ -385,62 +441,6 @@
             this.ıconButtonLogOut.UseVisualStyleBackColor = true;
             this.ıconButtonLogOut.Click += new System.EventHandler(this.ıconButtonLogOut_Click);
             // 
-            // panelTop
-            // 
-            this.panelTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
-            this.panelTop.Controls.Add(this.LblHome);
-            this.panelTop.Controls.Add(this.ıconPictureBoxCurrent);
-            this.panelTop.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelTop.Location = new System.Drawing.Point(350, 0);
-            this.panelTop.Name = "panelTop";
-            this.panelTop.Size = new System.Drawing.Size(1221, 75);
-            this.panelTop.TabIndex = 1;
-            // 
-            // LblHome
-            // 
-            this.LblHome.AutoSize = true;
-            this.LblHome.Font = new System.Drawing.Font("Papyrus", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblHome.ForeColor = System.Drawing.Color.Gainsboro;
-            this.LblHome.Location = new System.Drawing.Point(70, 24);
-            this.LblHome.Name = "LblHome";
-            this.LblHome.Size = new System.Drawing.Size(74, 33);
-            this.LblHome.TabIndex = 1;
-            this.LblHome.Text = "Home";
-            // 
-            // ıconPictureBoxCurrent
-            // 
-            this.ıconPictureBoxCurrent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
-            this.ıconPictureBoxCurrent.ForeColor = System.Drawing.Color.Gainsboro;
-            this.ıconPictureBoxCurrent.IconChar = FontAwesome.Sharp.IconChar.Home;
-            this.ıconPictureBoxCurrent.IconColor = System.Drawing.Color.Gainsboro;
-            this.ıconPictureBoxCurrent.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.ıconPictureBoxCurrent.IconSize = 63;
-            this.ıconPictureBoxCurrent.Location = new System.Drawing.Point(8, 11);
-            this.ıconPictureBoxCurrent.Name = "ıconPictureBoxCurrent";
-            this.ıconPictureBoxCurrent.Size = new System.Drawing.Size(65, 63);
-            this.ıconPictureBoxCurrent.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ıconPictureBoxCurrent.TabIndex = 0;
-            this.ıconPictureBoxCurrent.TabStop = false;
-            // 
-            // panelShadow
-            // 
-            this.panelShadow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(24)))), ((int)(((byte)(58)))));
-            this.panelShadow.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelShadow.Location = new System.Drawing.Point(350, 75);
-            this.panelShadow.Name = "panelShadow";
-            this.panelShadow.Size = new System.Drawing.Size(1221, 14);
-            this.panelShadow.TabIndex = 2;
-            // 
-            // panelDesktopForm
-            // 
-            this.panelDesktopForm.AutoScroll = true;
-            this.panelDesktopForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.panelDesktopForm.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelDesktopForm.Location = new System.Drawing.Point(350, 89);
-            this.panelDesktopForm.Name = "panelDesktopForm";
-            this.panelDesktopForm.Size = new System.Drawing.Size(1221, 935);
-            this.panelDesktopForm.TabIndex = 3;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -458,10 +458,10 @@
             this.panelMenu.ResumeLayout(false);
             this.panelLogo.ResumeLayout(false);
             this.panelLogo.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnHome)).EndInit();
             this.panelTop.ResumeLayout(false);
             this.panelTop.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ıconPictureBoxCurrent)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnHome)).EndInit();
             this.ResumeLayout(false);
 
         }

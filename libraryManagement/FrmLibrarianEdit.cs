@@ -53,7 +53,8 @@ namespace libraryManagement
         private void btnSave_Click(object sender, EventArgs e)
         {
             //update new profile informations
-            SqlCommand updateLibrarian = new SqlCommand("update Tbl_Librarian set LibrarianName=@p1,LibrarianSurname=@p2,LibrarianEmail=@p3,LibrarianGender=@p4,LibrarianPhone=@p5,LibrarianPassword=@p6,LibrarianPicture=@p7 where LibrarianTC=@p8", bgl.baglanti());
+            SqlCommand updateLibrarian = new SqlCommand("update Tbl_Librarian set LibrarianName=@p1,LibrarianSurname=@p2,LibrarianEmail=@p3" +
+                ",LibrarianGender=@p4,LibrarianPhone=@p5,LibrarianPassword=@p6,LibrarianPicture=@p7 where LibrarianTC=@p8", bgl.baglanti());
             updateLibrarian.Parameters.AddWithValue("@p1", txtName.Text);
             updateLibrarian.Parameters.AddWithValue("@p2", txtSurname.Text);
             updateLibrarian.Parameters.AddWithValue("@p3", txtMail.Text);

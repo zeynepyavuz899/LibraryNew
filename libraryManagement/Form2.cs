@@ -10,27 +10,19 @@ using System.Windows.Forms;
 using FontAwesome.Sharp;
 using System.Data.SqlClient;
 
-
-
 namespace libraryManagement
 {
-    public partial class Form1 : Form
+    public partial class Form2 : Form
     {
-
-
-
         private IconButton currentBtn;
         private Panel leftBorderBtn;
         private Form currentChildForm;
-
-        public Form1()
+        public Form2()
         {
             InitializeComponent();
             leftBorderBtn = new Panel();
             leftBorderBtn.Size = new Size(7, 70);
             panelMenu.Controls.Add(leftBorderBtn);
-
-
         }
 
         private struct RGBColors
@@ -49,6 +41,7 @@ namespace libraryManagement
             public static Color color12 = Color.FromArgb(95, 118, 251);
         }
 
+
         private void ActiveButton(object senderBtn, Color color)
         {
 
@@ -64,10 +57,10 @@ namespace libraryManagement
                 currentBtn.TextImageRelation = TextImageRelation.TextBeforeImage;
                 currentBtn.ImageAlign = ContentAlignment.MiddleRight;
                 //Left Border Button
-             /*   leftBorderBtn.BackColor = color;
-                leftBorderBtn.Location = new Point(0, currentBtn.Location.Y);
-                leftBorderBtn.Visible = true;
-                leftBorderBtn.BringToFront();    */
+                 leftBorderBtn.BackColor = color;
+                 leftBorderBtn.Location = new Point(0, currentBtn.Location.Y);
+                 leftBorderBtn.Visible = true;
+                 leftBorderBtn.BringToFront();
                 //main icon
                 ıconPictureBoxCurrent.IconChar = currentBtn.IconChar;
                 ıconPictureBoxCurrent.IconColor = color;
@@ -76,7 +69,6 @@ namespace libraryManagement
 
             }
         }
-
         private void DisableButton()
         {
             if (currentBtn != null)
@@ -89,7 +81,6 @@ namespace libraryManagement
                 currentBtn.ImageAlign = ContentAlignment.MiddleLeft;
             }
         }
-
 
         private void OpenChildForm(Form childForm)
         {
@@ -127,79 +118,27 @@ namespace libraryManagement
             Reset();
         }
 
-      
-
-        
-
-        private void ıconButtonAddPublication_Click(object sender, EventArgs e)
+        private void btnMyAccount_Click(object sender, EventArgs e)
         {
             ActiveButton(sender, RGBColors.color1);
-            OpenChildForm(new FrmAddPublication());
+            OpenChildForm(new FrmStudentAccount());
         }
 
-        private void ıconButtonAddBook_Click(object sender, EventArgs e)
+        private void btnBookReport_Click(object sender, EventArgs e)
         {
             ActiveButton(sender, RGBColors.color2);
-            OpenChildForm(new FrmAddBook());
+            OpenChildForm(new FrmStudentBookReport());
         }
 
-        private void ıconButtonBookReport_Click(object sender, EventArgs e)
+        private void btnPenaltyReport_Click(object sender, EventArgs e)
         {
             ActiveButton(sender, RGBColors.color3);
-            OpenChildForm(new FrmBookReport());
+            OpenChildForm(new FrmStudentPenaltyReport());
         }
 
-        private void ıconButtonAddBranch_Click(object sender, EventArgs e)
+        private void BtnLogOut_Click(object sender, EventArgs e)
         {
-            ActiveButton(sender, RGBColors.color4);
-            OpenChildForm(new FrmAddBranch());
-        }
-
-        private void ıconButtonAddStudent_Click(object sender, EventArgs e)
-        {
-            ActiveButton(sender, RGBColors.color5);
-            OpenChildForm(new FrmAddStudent());
-        }
-
-        private void ıconButtonStudentReport_Click(object sender, EventArgs e)
-        {
-            ActiveButton(sender, RGBColors.color6);
-            OpenChildForm(new FrmStudentReport());
-        }
-
-        private void ıconButtonIssueBook_Click(object sender, EventArgs e)
-        {
-            ActiveButton(sender, RGBColors.color7);
-            OpenChildForm(new FrmIssueBook());
-        }
-
-        private void ıconButtonIssueReport_Click(object sender, EventArgs e)
-        {
-            ActiveButton(sender, RGBColors.color8);
-            OpenChildForm(new FrmIssueReport());
-        }
-
-        private void ıconButtonReturnBook_Click(object sender, EventArgs e)
-        {
-            ActiveButton(sender, RGBColors.color9);
-            OpenChildForm(new FrmReturnBook());
-        }
-
-        private void ıconButtonPenalty_Click(object sender, EventArgs e)
-        {
-            ActiveButton(sender, RGBColors.color10);
-            OpenChildForm(new FrmPenalty());
-        }
-
-        private void ıconButtonLogOut_Click(object sender, EventArgs e)
-        {
-            ActiveButton(sender, RGBColors.color11);
-            
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            OpenChildForm(new FrmLibrarian());
+            this.Close();
         }
     }
 }

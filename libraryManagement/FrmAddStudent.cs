@@ -67,12 +67,14 @@ namespace libraryManagement
             txtName.Clear();
             txtSurname.Clear();
             txtMail.Clear();
-            cmbGender.Items.Clear();
+            cmbGender.Text = "";
             mskPhone.Clear();
-            cmbDepartment.Items.Clear();
+            cmbDepartment.Text = "";
             mskTC.Clear();
-           
-            
+            pictureBoxPic.ImageLocation = "";
+
+
+
 
             MessageBox.Show("Successful");
         }

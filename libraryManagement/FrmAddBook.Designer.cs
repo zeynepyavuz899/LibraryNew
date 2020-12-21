@@ -301,14 +301,15 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
             this.ClientSize = new System.Drawing.Size(1325, 896);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBoxPic);
             this.Controls.Add(this.btnAdd);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnPicture);
             this.Controls.Add(this.lblDosyaName);
             this.Name = "FrmAddBook";
             this.Text = "Add Book";
+            this.Load += new System.EventHandler(this.FrmAddBook_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPic)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
