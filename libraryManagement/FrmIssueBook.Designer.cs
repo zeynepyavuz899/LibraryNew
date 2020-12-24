@@ -59,14 +59,14 @@
             this.lblBook = new System.Windows.Forms.Label();
             this.lblSelectPub = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.cmbDepartment = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.lblDays = new System.Windows.Forms.Label();
+            this.cmbStudent = new System.Windows.Forms.ComboBox();
+            this.txtDays = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.ıconButton2 = new FontAwesome.Sharp.IconButton();
-            this.txtDays = new System.Windows.Forms.TextBox();
-            this.cmbStudent = new System.Windows.Forms.ComboBox();
+            this.lblDays = new System.Windows.Forms.Label();
+            this.cmbDepartment = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPic)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -399,41 +399,21 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Select Student";
             // 
-            // cmbDepartment
+            // cmbStudent
             // 
-            this.cmbDepartment.FormattingEnabled = true;
-            this.cmbDepartment.Location = new System.Drawing.Point(128, 40);
-            this.cmbDepartment.Name = "cmbDepartment";
-            this.cmbDepartment.Size = new System.Drawing.Size(214, 31);
-            this.cmbDepartment.TabIndex = 18;
-            this.cmbDepartment.SelectedIndexChanged += new System.EventHandler(this.cmbDepartment_SelectedIndexChanged);
+            this.cmbStudent.FormattingEnabled = true;
+            this.cmbStudent.Location = new System.Drawing.Point(466, 40);
+            this.cmbStudent.Name = "cmbStudent";
+            this.cmbStudent.Size = new System.Drawing.Size(214, 31);
+            this.cmbStudent.TabIndex = 22;
+            this.cmbStudent.SelectedIndexChanged += new System.EventHandler(this.cmbStudent_SelectedIndexChanged);
             // 
-            // label2
+            // txtDays
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(379, 43);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(89, 23);
-            this.label2.TabIndex = 17;
-            this.label2.Text = "Student :";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(4, 43);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(127, 23);
-            this.label3.TabIndex = 16;
-            this.label3.Text = "Department :";
-            // 
-            // lblDays
-            // 
-            this.lblDays.AutoSize = true;
-            this.lblDays.Location = new System.Drawing.Point(721, 43);
-            this.lblDays.Name = "lblDays";
-            this.lblDays.Size = new System.Drawing.Size(66, 23);
-            this.lblDays.TabIndex = 20;
-            this.lblDays.Text = "Days :";
+            this.txtDays.Location = new System.Drawing.Point(784, 42);
+            this.txtDays.Name = "txtDays";
+            this.txtDays.Size = new System.Drawing.Size(81, 29);
+            this.txtDays.TabIndex = 21;
             // 
             // label6
             // 
@@ -463,21 +443,41 @@
             this.ıconButton2.UseVisualStyleBackColor = true;
             this.ıconButton2.Click += new System.EventHandler(this.ıconButton2_Click);
             // 
-            // txtDays
+            // lblDays
             // 
-            this.txtDays.Location = new System.Drawing.Point(784, 42);
-            this.txtDays.Name = "txtDays";
-            this.txtDays.Size = new System.Drawing.Size(81, 29);
-            this.txtDays.TabIndex = 21;
+            this.lblDays.AutoSize = true;
+            this.lblDays.Location = new System.Drawing.Point(721, 43);
+            this.lblDays.Name = "lblDays";
+            this.lblDays.Size = new System.Drawing.Size(66, 23);
+            this.lblDays.TabIndex = 20;
+            this.lblDays.Text = "Days :";
             // 
-            // cmbStudent
+            // cmbDepartment
             // 
-            this.cmbStudent.FormattingEnabled = true;
-            this.cmbStudent.Location = new System.Drawing.Point(466, 40);
-            this.cmbStudent.Name = "cmbStudent";
-            this.cmbStudent.Size = new System.Drawing.Size(214, 31);
-            this.cmbStudent.TabIndex = 22;
-            this.cmbStudent.SelectedIndexChanged += new System.EventHandler(this.cmbStudent_SelectedIndexChanged);
+            this.cmbDepartment.FormattingEnabled = true;
+            this.cmbDepartment.Location = new System.Drawing.Point(128, 40);
+            this.cmbDepartment.Name = "cmbDepartment";
+            this.cmbDepartment.Size = new System.Drawing.Size(214, 31);
+            this.cmbDepartment.TabIndex = 18;
+            this.cmbDepartment.SelectedIndexChanged += new System.EventHandler(this.cmbDepartment_SelectedIndexChanged);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(4, 43);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(127, 23);
+            this.label3.TabIndex = 16;
+            this.label3.Text = "Department :";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(379, 43);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(89, 23);
+            this.label2.TabIndex = 17;
+            this.label2.Text = "Student :";
             // 
             // FrmIssueBook
             // 

@@ -98,7 +98,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("MV Boli", 48F, System.Drawing.FontStyle.Italic);
             this.label1.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label1.Location = new System.Drawing.Point(665, 43);
+            this.label1.Location = new System.Drawing.Point(508, 41);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(481, 85);
             this.label1.TabIndex = 0;
